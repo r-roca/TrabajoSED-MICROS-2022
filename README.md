@@ -7,6 +7,7 @@ Nuestro proyecto será capaz de traducir código morse, lenguaje basado en punto
 ## Componentes
 1. Placa STM32F411
 2. Pantalla LCD 16x2
+3. Potenciómetro 10KOhms
 
 ## Integrantes del equipo
 - Patricia Martín Mateo 55339.
