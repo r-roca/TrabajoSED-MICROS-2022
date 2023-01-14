@@ -93,7 +93,6 @@ const char abecedario[][2] = {
 char v_morse[5] = ""; //INPUT
 char palabra[17] = ""; // palabra
 
-int caracter; // caracter en el que vamos a escribir en el char de input
 
 /* USER CODE END PD */
 
@@ -117,6 +116,7 @@ uint32_t IC_Val1 = 0;
 uint32_t IC_Val2 = 0;
 uint32_t Difference = 0;
 uint32_t usWidth2 = 0; // para ver si es una letra distinta
+
 _Bool letra_nueva;
 _Bool fin;
 int letra;
@@ -225,7 +225,6 @@ void vectorMorse(uint32_t tiempo)
 	else {
 		strcat(v_morse, "-");
 	}
-	caracter++;
 }
 
 
@@ -247,8 +246,6 @@ void traducir_display(char* code)
 	for (int i = 0; i < 5; i++) {
 	    v_morse[i] = '\0';
 	}
-
-	return;
 }
 
 void imprimir(char* frase)
@@ -327,7 +324,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  //LDR
-
 	  //Lee continuamente el ldr, y en cuanto se tape entre en modo lectura
 	  //
 	   HAL_ADC_Start(&hadc1);
